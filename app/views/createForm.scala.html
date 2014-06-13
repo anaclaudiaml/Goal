@@ -1,0 +1,28 @@
+@(jogadorForm: Form[Jogador])
+
+@import helper._
+
+@implicitFieldConstructor = @{ FieldConstructor(twitterBootstrapInput.render) } 
+
+@main {
+    
+    <h1>Adicionar Jogadores</h1>
+    
+    @form(routes.Application.save()) {
+        
+        <fieldset>
+        
+            @inputText(jogadorForm("name"), '_label -> "Nome do Jogador")
+            @inputText(jogadorForm("caminho"), '_label -> "Caminho da imagem")
+            
+
+        </fieldset>
+        
+        <div class="actions">
+            <input type="submit" value="Adicionar Jogador" class="btn primary"> ou 
+            <a href="@routes.Application.list()" class="btn">Cancelar</a> 
+        </div>
+        
+    }
+    
+}

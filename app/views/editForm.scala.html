@@ -1,0 +1,33 @@
+@(id: Long, posicoesForm: Form[Posicoes])
+
+@import helper._
+
+@implicitFieldConstructor = @{ FieldConstructor(twitterBootstrapInput.render) } 
+
+@main {
+    
+    <h1>Editar Posição</h1>
+    
+    @form(routes.Application.update(id)) {
+        
+        <fieldset>
+        
+            
+            @inputText(posicoesForm("name"),'_label -> "",'style -> "display: none")
+			@select(posicoesForm("jogador.id"),options(Jogador.options), '_label -> "Jogador", '_default -> "-- Escolher Jogador --", '_showConstraints -> false )
+			
+        </fieldset>
+        
+        <div class="actions">
+            <input type="submit" value="Salvar Posição" class="btn primary"> ou 
+            <a href="@routes.Application.list()" class="btn">Cancelar</a> 
+
+		</div>
+        
+    }
+    
+    @form(routes.Application.delete(id), 'class -> "topRight") {
+        <input type="submit" value="Excluir Jogador" class="btn danger">
+    }
+    
+}

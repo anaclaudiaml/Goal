@@ -1,0 +1,179 @@
+@(currentPage: Posicoes.Page, currentSortBy: String, currentOrder: String, currentFilter: String)
+
+
+
+@main {
+    <div style='position:relative; top:55px;'>
+		<img src="@routes.Assets.at("imagens/campo.jpg")"" width=980px height=500px>
+		
+        <a class="btn success" id="add" href="@routes.Application.create()">Adicionar Jogador</a>
+        
+    </div>
+
+    
+    @if(currentPage.getTotalRowCount == 0) {
+        
+        <div class="well">
+            <em>Nada para mostrar</em>
+        </div>
+        
+    } else {
+        
+       
+                @for(posicoes <- currentPage.getList) {
+                    <tr>
+                    @if(posicoes.id ==1) {
+						<div style='position:absolute; top:345px; left:65px;'>							
+						<a href="@routes.Application.edit(posicoes.id)">
+						@if(posicoes.jogador ==null){
+							<img src="@routes.Assets.at(posicoes.name)" width=50px><br>
+							
+						}else{
+							<img src="@routes.Assets.at(posicoes.jogador.caminho)" width=50px><br>
+							</a>
+							@posicoes.jogador.name
+						}
+							</div>
+					}
+					@if(posicoes.id ==2) {
+						<div style='position:absolute; top:150px; left:250px;'>
+						<a href="@routes.Application.edit(posicoes.id)">
+						@if(posicoes.jogador ==null){
+							<img src="@routes.Assets.at(posicoes.name)" width=50px><br>
+							
+						}else{
+							<img src="@routes.Assets.at(posicoes.jogador.caminho)" width=50px><br>
+							</a>
+							@posicoes.jogador.name
+						}
+							</div>
+					}
+					@if(posicoes.id ==3) {
+						<div style='position:absolute; top:280px; left:210px;'>
+						<a href="@routes.Application.edit(posicoes.id)">
+						@if(posicoes.jogador ==null){
+							<img src="@routes.Assets.at(posicoes.name)" width=50px><br>
+							
+						}else{
+							<img src="@routes.Assets.at(posicoes.jogador.caminho)" width=50px><br>
+							</a>
+							@posicoes.jogador.name
+						}
+							</div>
+					}
+					@if(posicoes.id ==4) {
+						<div style='position:absolute; top:380px; left:210px;'>
+						<a href="@routes.Application.edit(posicoes.id)">
+						@if(posicoes.jogador ==null){
+							<img src="@routes.Assets.at(posicoes.name)" width=50px><br>
+							
+						}else{
+							<img src="@routes.Assets.at(posicoes.jogador.caminho)" width=50px><br>
+							</a>
+							@posicoes.jogador.name
+						}
+							</div>
+					}
+					@if(posicoes.id == 5) {
+						<div style='position:absolute; top:520px; left:250px;'>
+						<a href="@routes.Application.edit(posicoes.id)">
+						@if(posicoes.jogador ==null){
+							<img src="@routes.Assets.at(posicoes.name)" width=50px><br>
+							
+						}else{
+							<img src="@routes.Assets.at(posicoes.jogador.caminho)" width=50px><br>
+							</a>
+							@posicoes.jogador.name
+						}
+							</div>
+					}
+					@if(posicoes.id == 6) {
+						<div style='position:absolute; top:400px; left:360px;'>
+						<a href="@routes.Application.edit(posicoes.id)">
+						@if(posicoes.jogador ==null){
+							<img src="@routes.Assets.at(posicoes.name)" width=50px><br>
+							
+						}else{
+							<img src="@routes.Assets.at(posicoes.jogador.caminho)" width=50px><br>
+							</a>
+							@posicoes.jogador.name
+						}
+							</div>
+					}
+					@if(posicoes.id == 7) {
+						<div style='position:absolute; top:260px; left:440px;'>
+						<a href="@routes.Application.edit(posicoes.id)">
+						@if(posicoes.jogador ==null){
+							<img src="@routes.Assets.at(posicoes.name)" width=50px><br>
+							
+						}else{
+							<img src="@routes.Assets.at(posicoes.jogador.caminho)" width=50px><br>
+							</a>
+							@posicoes.jogador.name
+						}
+							</div>
+					}			
+					@if(posicoes.id == 8) {
+						<div style='position:absolute; top:520px; left:560px;'>
+						<a href="@routes.Application.edit(posicoes.id)">
+						@if(posicoes.jogador ==null){
+							<img src="@routes.Assets.at(posicoes.name)" width=50px><br>
+							
+						}else{
+							<img src="@routes.Assets.at(posicoes.jogador.caminho)" width=50px><br>
+							</a>
+							@posicoes.jogador.name
+						}
+							</div>
+					}				
+					@if(posicoes.id == 9) {
+						<div style='position:absolute; top:360px; left:640px;'>
+						<a href="@routes.Application.edit(posicoes.id)">
+						@if(posicoes.jogador ==null){
+							<img src="@routes.Assets.at(posicoes.name)" width=50px><br>
+							
+						}else{
+							<img src="@routes.Assets.at(posicoes.jogador.caminho)" width=50px><br>
+							</a>
+							@posicoes.jogador.name
+						}
+							</div>
+					}
+					@if(posicoes.id == 10) {
+						<div style='position:absolute; top:200px; left:610px;'>
+						<a href="@routes.Application.edit(posicoes.id)">
+						@if(posicoes.jogador ==null){
+							<img src="@routes.Assets.at(posicoes.name)" width=50px><br>
+							
+						}else{
+							<img src="@routes.Assets.at(posicoes.jogador.caminho)" width=50px><br>
+							</a>
+							@posicoes.jogador.name
+						}
+							</div>
+					}
+					@if(posicoes.id == 11) {
+						<div style='position:absolute; top:360px; left:800px;'>
+						<a href="@routes.Application.edit(posicoes.id)">
+						@if(posicoes.jogador ==null){
+							<img src="@routes.Assets.at(posicoes.name)" width=50px><br>
+							
+						}else{
+							<img src="@routes.Assets.at(posicoes.jogador.caminho)" width=50px><br>
+							</a>
+							@posicoes.jogador.name
+						}
+							</div>
+					}
+					
+                }
+
+            
+
+        
+        
+    }
+        
+}
+
+            
