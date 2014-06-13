@@ -1,0 +1,23 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Default path will just redirect to the posicoes list
+GET     /                           controllers.Application.index()
+
+GET     /posicoes                  controllers.Application.list(p:Int ?= 0, s ?= "name", o ?= "asc", f ?= "")
+
+# Add jogagor
+GET     /posicoes/new              controllers.Application.create()
+POST    /posicoes                  controllers.Application.save()
+
+# Edit position
+GET     /posicoes/:id              controllers.Application.edit(id:Long)
+POST    /posicoes/:id              controllers.Application.update(id:Long)
+
+# Delete a position
+POST    /posicoes/:id/delete       controllers.Application.delete(id:Long)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+
