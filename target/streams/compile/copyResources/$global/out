@@ -1,0 +1,10 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Ana-PC\Documents\GitHub\Goal\conf\application.conf,C:\Users\Ana-PC\Documents\GitHub\Goal\target\scala-2.10\classes\application.conf)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Ana-PC\Documents\GitHub\Goal\conf\evolutions,C:\Users\Ana-PC\Documents\GitHub\Goal\target\scala-2.10\classes\evolutions)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Ana-PC\Documents\GitHub\Goal\conf\messages,C:\Users\Ana-PC\Documents\GitHub\Goal\target\scala-2.10\classes\messages)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Ana-PC\Documents\GitHub\Goal\conf\META-INF,C:\Users\Ana-PC\Documents\GitHub\Goal\target\scala-2.10\classes\META-INF)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Ana-PC\Documents\GitHub\Goal\conf\routes,C:\Users\Ana-PC\Documents\GitHub\Goal\target\scala-2.10\classes\routes)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Ana-PC\Documents\GitHub\Goal\conf\evolutions\default,C:\Users\Ana-PC\Documents\GitHub\Goal\target\scala-2.10\classes\evolutions\default)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Ana-PC\Documents\GitHub\Goal\conf\evolutions\default\1.sql,C:\Users\Ana-PC\Documents\GitHub\Goal\target\scala-2.10\classes\evolutions\default\1.sql)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Ana-PC\Documents\GitHub\Goal\conf\evolutions\default\2.sql,C:\Users\Ana-PC\Documents\GitHub\Goal\target\scala-2.10\classes\evolutions\default\2.sql)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Ana-PC\Documents\GitHub\Goal\conf\META-INF\persistence.xml,C:\Users\Ana-PC\Documents\GitHub\Goal\target\scala-2.10\classes\META-INF\persistence.xml)[0m
