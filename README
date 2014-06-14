@@ -1,4 +1,39 @@
+======================================== Description ===================================
 
-This is an application to schedule the best Brazilian selection 
+
+The purpose of this app is schedule the best brazilian soccer team of ever and maybe do it with another 
+selections and share this on social networks, but this still a prototypo without all the best players added, 
+it's not able to share on facebook, and the layout is not finished.
+This app was done with play framework 2.2.3, java and use the native database h2
+
+
+
+
+=========================================== CRUD =======================================
+
+
 Using a simple CRUD to make connection with the h2 database
+The "create form" add another 'jogador' (player) to the database, and it becomes one of the options available 
+to put in one of the positions of the field.
+The "edit form" allows change the player in each position (and it changes the photo) 
+The "delete form" delete one of the positions avaible in the field
+
+
+
+
+========================================= How to Use ===================================
+
+
+To change the player of the position you must click on the photo with the brazilian escudo over the field
+that you want to change, and will be open the form to do it.
+To add a player you must click on the button on the right side of the field and add the name of the player
+and the way to the image (in future this will be only for admin)
+To delete a position you might click on it and then click on the delete button
+
+
+
+
+========================================================================================
+
+The app it's not finished and I don't own the rights of the photos used.
 
