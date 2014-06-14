@@ -5,6 +5,8 @@ The purpose of this app is schedule the best brazilian soccer team of ever and m
 selections and share this on social networks, but this still a prototypo without all the best players added, 
 it's not able to share on facebook, and the layout is not finished.
 This app was done with play framework 2.2.3, java and use the native database h2
+The photos used must be changed for the final version and sometimes the application doesn't work well on firefox.
+
 
 
 
